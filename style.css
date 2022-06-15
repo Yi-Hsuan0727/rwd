@@ -162,6 +162,9 @@ body a{
 	font-size: 24px;
 	margin-bottom: 30px;
 }
+.table table{
+	width: 100%;
+}
 .table th,.table td{
 	padding: 14px 100px 14px 14px;
 	border-bottom:1px solid #dddddd;
@@ -257,7 +260,6 @@ body a{
 	.table th,.table td{
 		font-size: 90%;
 		padding-right: 10px;
-		width: 100%;
     }
 	.course, .form{
         flex-direction: column;
