@@ -99,7 +99,7 @@ body a{
 	background: #fff;
 }
 .header h1 a{
-	background-image: url(../images/logo.png);
+	background-image: url(images/logo.png);
 	width: 173px;
 	height: 51px;
 	text-indent: 101%;
@@ -120,7 +120,7 @@ body a{
 }
 /*banner*/
 .banner{
-	background-image: url(../images/banner_09.png);
+	background-image: url(images/banner_09.png);
 	padding: 130px 0 90px 0;
 	margin-bottom: 64px;
 }
