@@ -57,13 +57,13 @@ body a{
 .wrap{
 	margin: 0 auto;
 	max-width: 1003px;
-	margin-top: 30px;
 }
 /*top*/
 .top{
 	width: 1003px;
 	position: fixed;
 	top:0;
+	white-space: nowrap;
 }
 .topbar{
 	background: #f6f6f6;
@@ -155,6 +155,7 @@ body a{
 /*table*/
 .table{
 	margin: 0 66px 60px 66px;
+	white-space: nowrap;
 }
 .table h3{
 	text-align: center;
@@ -176,26 +177,26 @@ body a{
 /*form*/
 .infor{
     background: linear-gradient(#00664D, #009671);
-	padding: 20px;
 	color: #fff;
 }
 .infor h4{
 	font-size: 26px;
 	line-height: 1.5;
 	text-align: center;
-	margin-bottom: 20px;
+	padding: 20px;
 }
 .form{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	line-height: 1.5;
 	position: relative;
+	padding: 0 20px 20px 20px;
 }
 .form textarea, .form input{
 	border-radius: 3px;
 	-webkit-border-radius:3px;
 	border: transparent;
-	width: 460px;
+	width: 450px;
 }
 .form input{
 	font-size: 14px;
@@ -213,8 +214,8 @@ body a{
 	color: #ffffff;
 	width: 70px;
 	position: absolute;
-	bottom:0;
-	right:0;
+	bottom:20px;
+	right:20px;
 }
 #submit:hover{
 	color: #02a77d;
@@ -237,17 +238,24 @@ body a{
 @media(max-width:767px){
 	.wrap{
 		width: 100%;
-        margin: 0 15px;
+		margin: 0 30px;
 	}
 	.top{
-        width: 100%;
+		width: 100%;
         position: static;
-    }
-    .table{
-        margin: 0 40px 40px 40px;
-    }
+	}
+	.banner{
+		background: url(images/banner_09.png) no-repeat;
+		height: 100px;
+		background-position:center center;
+		padding: 50px 0 90px 0;
+	  }
+	.banner h2{
+		font-size: 28px;}
 	.table th,.table td{
-		padding: 14px 40px 14px 14px;
+		font-size: 90%;
+		padding-right: 10px;
+		width: 100%;
     }
 	.course, .form{
         flex-direction: column;
@@ -268,14 +276,18 @@ body a{
         position: static;
         margin-top: 10px;
         align-self: flex-end;
-    }
-}
-@media(max-width:480px){
-    .table th,.table td{
-		padding: 5px;
-		font-size: 60%;
 	}
     img{
-        width: 30%;
-    }
+		width: 30%;
+		height: 30%;
+	}
+}
+@media(max-width:490px){
+    .table th,.table td{
+		padding: 5px;
+		font-size: 80%;
+	}
+	.form textarea, .form input{
+		width: 300px;
+	}
 }
