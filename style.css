@@ -225,7 +225,6 @@ body a{
 .footer{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 60px;
 	padding: 25px;
 }
 .footer li{
@@ -254,7 +253,7 @@ body a{
 		font-size: 28px;
 	}
 	.table{
-		margin: 0 40px 40px 40px;
+		margin: 0 30px 40px 30px;
 	}
 	.table th,.table td{
 		font-size: 90%;
